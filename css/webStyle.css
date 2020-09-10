@@ -281,3 +281,10 @@ ul{
     opacity: 0.7;
     line-height: 1.7em;
 }
+
+.smlBanner{
+    padding: 0.4rem 0.2rem 0.2rem 0.2rem;
+}
+.smlBanner img{
+    width: 100%;
+}
