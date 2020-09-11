@@ -283,8 +283,64 @@ ul{
 }
 
 .smlBanner{
-    padding: 0.4rem 0.2rem 0.2rem 0.2rem;
+    padding: 0.4rem 0.4rem;
 }
 .smlBanner img{
     width: 100%;
+    display: block;
+}
+.smlMain{
+    font-size:0.26666666666666666rem;
+    padding: 0.4rem 0.4rem 1rem 0.4rem;
+}
+.smlMain img{
+    max-width: 100%;
+}
+.smlMainAbt{
+
+}
+.smlMainAbt p{
+    padding: 0.1rem;
+    line-height: 1.7em;
+    text-align: justify;
+}
+.smlMainPro{
+}
+.smlMainPro .btnGrp{
+    text-align: center;
+    font-size: 0;
+}
+.smlMainPro .btnGrp a{
+    padding:0.13333333333333333rem 0.26666666666666666rem;
+    background-color: #002e79;
+    display: inline-block;
+    color: #fff;
+    font-size: 0.23rem;
+    margin-right: 0.05rem;
+    margin-top: 0.05rem;
+    margin-bottom: 0.05rem;
+    border-radius: 0.04rem;
+}
+.smlMainPro ul{
+    margin-top: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.smlMainPro li{
+    width: 4.533333333333333rem;
+    margin-right: 0.13333333333333333rem;
+    margin-bottom: 0.3rem;
+}
+.smlMainPro li:nth-child(2n){
+    margin-right: 0;
+}
+.smlMainPro ul li img{
+    width: 100%;
+    height: 3.6rem;
+    display: block;
+}
+.smlMainPro ul li h3{
+    font-size: 0.34rem;
+    color:#333;
+    padding: 0.2rem 0;
 }
