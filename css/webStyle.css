@@ -202,10 +202,13 @@ ul{
 .news{
     padding:1.4666666666666666rem 0.4rem;
 }
-.news .pubTitle{
+.smlMainNw{
+    margin: 0.4rem 0;
+}
+.news .pubTitle,.smlMainNw .pubTitle{
     padding-left: 0;
 }
-.news .time{
+.news .time,.smlMainNw .time{
     position: relative;
     font-size: 0.37333333333333335rem;
     color: #1561bd;
@@ -213,50 +216,50 @@ ul{
     text-align: right;
     padding-right: 0.2rem;
 }
-.news .time:after{
+.news .time:after,.smlMainNw .time:after{
     content: '';
     display: block;
-    background-color: #efefef;
+    background-color: #002e79;
     width: 0.013333333333333334rem;
     height: 100%;
     position: absolute;
     right: 0;
     top: 0;
 }
-.news .time span{
+.news .time span,.smlMainNw .time span{
     font-size: 0.5866666666666667rem;
     display: block;
 }
-.news ul{
+.news ul,.smlMainNw ul{
     width: 9.2rem;
     margin: 0 auto;
 }
-.news ul li{
-    border-top: #002e79 solid 0.013333333333333334rem;
+.news ul li,.smlMainNw ul li{
+    border-top: #efefef solid 0.013333333333333334rem;
     padding: 0.4rem 0;
 }
-.news ul li:last-child{
-    border-bottom: #002e79 solid 0.013333333333333334rem;
+.news ul li:last-child,.smlMainNw ul li:last-child{
+    border-bottom: #efefef solid 0.013333333333333334rem;
 }
-.news ul li a{
+.news ul li a,.smlMainNw ul li a{
     display: flex;
     /*justify-content: space-between;*/
 }
-.news .txt{
+.news .txt,.smlMainNw .txt{
     color: #333;
     width: 7rem;
     padding-left: 0.2rem;
 }
-.news .txt h4{
+.news .txt h4,.smlMainNw .txt h4{
     font-size: 0.32rem;
     padding-bottom: 0.15rem;
 }
-.news .txt p{
+.news .txt p,.smlMainNw .txt p{
     font-size: 0.24rem;
     opacity: 0.7;
     /*line-height: 0.7rem;*/
 }
-.news .pubBtn{
+.news .pubBtn,.smlMainNw .pubBtn{
     margin-top: 1.2rem;
 }
 .footer{
@@ -306,11 +309,11 @@ ul{
 }
 .smlMainPro{
 }
-.smlMainPro .btnGrp{
+.smlMain .smlMainBtn{
     text-align: center;
     font-size: 0;
 }
-.smlMainPro .btnGrp a{
+.smlMain .smlMainBtn a{
     padding:0.13333333333333333rem 0.26666666666666666rem;
     background-color: #002e79;
     display: inline-block;
@@ -344,3 +347,21 @@ ul{
     color:#333;
     padding: 0.2rem 0;
 }
+
+.smlMainMore .title{
+    font-size: 0.5066666666666667rem;
+    line-height: 1.7em;
+}
+.smlMainMore .info{
+    font-size: 0.24rem;
+    color:#aaa;
+    padding: 0.2rem 0 0.4rem 0;
+}
+.smlMainMore .info span{
+    color: #666;
+}
+.smlMainMore .con p{
+    padding: 0.1rem 0;
+}
+
+
