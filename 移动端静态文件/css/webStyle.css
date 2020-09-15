@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑","思源黑体","苹方";
+}
+a{
+    text-decoration: none
+}
+img{
+    border: none;
+}
+ul{
+    list-style-type: none;
+}
+.header{
+    background-color: #002e79;
+    height: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 0.3333333333333333rem;
+}
+.header .logo img{
+    height: 0.7777777777777778rem;
+}
+.header .tel{
+    font-size: 0.24444444444444444rem;
+    color: #fff;
+    text-align: right;
+}
+.header .tel b{
+    display: block;
+    letter-spacing: 0.02rem;
+}
+.nav{
+    background-color: #e9e9e9;
+    height: 0.8888888888888888rem;
+    color: #002e79;
+    font-size: 0.24444444444444444rem;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding:0 0.3333333333333333rem;
+}
+.nav ul li{
+    display: block;
+    width: 16.66%;
+    line-height: 0.8888888888888888rem;
+    text-align: center;
+}
+.banner img{
+    width: 10rem;
+}
+.pubTitle{
+    padding: 0 0.4rem 0.6666666666666666rem 0.4rem;
+}
+.pubTitle h2{
+    font-size: 0.5333333333333333rem;
+    color:#333;
+    font-weight: 400;
+}
+.pubTitle i{
+    width: 0.8rem;
+    height: 0.02666666666666667rem;
+    background-color: #444;
+    display: block;
+    margin: 0.4rem 0 0.15rem 0;
+}
+.pubTitle p{
+    font-size: 0.29333333333333333rem;
+    color: #eee;
+    text-transform: uppercase;
+}
+.pubArt{
+    padding: 1.3333333333333333rem 0;
+}
+
+.pubMain .artBox:nth-child(2n){
+    margin-left: 0.93rem;
+}
+
+.artBox{
+    width: 9.066666666666666rem;
+}
+
+.artBox .txt{
+    padding: 0.4rem;
+    position: relative;
+    top:-1.4666666666666666rem;
+}
+
+
+.artBox .pic img{
+    width: 100%;
+}
+
+.artBox b{
+    color: #111;
+    font-size:1.2rem;
+    font-weight: 400;
+}
+.artBox h3{
+    font-size: 0.4533333333333333rem;
+    color: #333;
+    font-weight: 400;
+    margin: 0.26666666666666666rem 0;
+}
+.artBox i{
+    width: 0.8rem;
+    height: 0.02666666666666667rem;
+    background-color: #444;
+    display: block;
+}
+.artBox p{
+    font-size: 0.26666666666666666rem;
+    color: #555;
+    padding-top:0.4rem;
+    line-height: 1.8em;
+}
+
+.pubBtn{
+    color: #002e79;
+    font-size: 0.48rem;
+    width: 9.2rem;
+    height: 0.9333333333333333rem;
+    text-align: center;
+    border: 0.013333333333333334rem solid #002e79;
+    display: block;
+    margin: 0 auto;
+    line-height: 0.9333333333333333rem;
+}
+.pubBtn:active{
+    color: #fff;
+    background-color: #002e79;
+}
+
+.about{
+    background-color: #1561bd;
+    padding:0.8rem 0.4rem 1.5rem;
+}
+
+.about .pubTitle{
+    padding: 0 0 0.6666666666666666rem 0;
+}
+
+.about .pubTitle h2{
+    color: #fff;
+}
+
+.about .pubTitle i{
+    background-color: #fff;
+}
+
+.about .pubTitle p{
+    color: #fff;
+}
+
+.about .txt{
+    font-size: 0.26666666666666666rem;
+    line-height: 1.8em;
+    color:#fff;
+}
+
+.about .pubBtn{
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 0.4rem 0;
+}
+
+.about .pic{
+    position: relative;
+    z-index: 8;
+    width: 7.733333333333333rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+.about .pic:before,.about .pic:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3.466666666666667rem;
+    height: 3.466666666666667rem;
+    background-color: #002e79;
+    z-index: 0;
+}
+.about .pic:before{
+    right: -0.5rem;
+    top: -0.5rem;
+}
+.about .pic:after{
+    left: -0.5rem;
+    bottom: -0.5rem;
+}
+.about .pic img{
+    position: relative;
+    z-index: 8;
+    width: 100%;
+    display: block;
+}
+
+.news{
+    padding:1.4666666666666666rem 0.4rem;
+}
+.smlMainNw{
+    margin: 0.4rem 0;
+}
+.news .pubTitle,.smlMainNw .pubTitle{
+    padding-left: 0;
+}
+.news .time,.smlMainNw .time{
+    position: relative;
+    font-size: 0.37333333333333335rem;
+    color: #1561bd;
+    width:  1.7rem;
+    text-align: right;
+    padding-right: 0.2rem;
+}
+.news .time:after,.smlMainNw .time:after{
+    content: '';
+    display: block;
+    background-color: #002e79;
+    width: 0.013333333333333334rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.news .time span,.smlMainNw .time span{
+    font-size: 0.5866666666666667rem;
+    display: block;
+}
+.news ul,.smlMainNw ul{
+    width: 9.2rem;
+    margin: 0 auto;
+}
+.news ul li,.smlMainNw ul li{
+    border-top: #efefef solid 0.013333333333333334rem;
+    padding: 0.4rem 0;
+}
+.news ul li:last-child,.smlMainNw ul li:last-child{
+    border-bottom: #efefef solid 0.013333333333333334rem;
+}
+.news ul li a,.smlMainNw ul li a{
+    display: flex;
+    /*justify-content: space-between;*/
+}
+.news .txt,.smlMainNw .txt{
+    color: #333;
+    width: 7rem;
+    padding-left: 0.2rem;
+}
+.news .txt h4,.smlMainNw .txt h4{
+    font-size: 0.32rem;
+    padding-bottom: 0.15rem;
+}
+.news .txt p,.smlMainNw .txt p{
+    font-size: 0.24rem;
+    opacity: 0.7;
+    /*line-height: 0.7rem;*/
+}
+.news .pubBtn,.smlMainNw .pubBtn{
+    margin-top: 1.2rem;
+}
+.footer{
+    padding: 1.4666666666666666rem 0;
+    background-color: #002e79;
+    color: #fff;
+    text-align: center;
+}
+.footer img{
+    height: 1rem;
+}
+.footer .ftTit{
+    font-size: 0.4rem;
+    padding: 0.4rem 0;
+}
+.footer .ftTit span{
+    display: block;
+}
+.footer .txt{
+    padding: 0 0.4rem;
+    font-size: 0.29333333333333333rem;
+    opacity: 0.7;
+    line-height: 1.7em;
+}
+
+.smlBanner{
+    padding: 0.4rem 0.4rem;
+}
+.smlBanner img{
+    width: 100%;
+    display: block;
+}
+.smlMain{
+    font-size:0.26666666666666666rem;
+    padding: 0.4rem 0.4rem 1rem 0.4rem;
+}
+.smlMain img{
+    max-width: 100%;
+}
+.smlMainAbt{
+
+}
+.smlMainAbt p{
+    padding: 0.1rem;
+    line-height: 1.7em;
+    text-align: justify;
+}
+.smlMainPro{
+}
+.smlMain .smlMainBtn{
+    text-align: center;
+    font-size: 0;
+}
+.smlMain .smlMainBtn a{
+    padding:0.13333333333333333rem 0.26666666666666666rem;
+    background-color: #002e79;
+    display: inline-block;
+    color: #fff;
+    font-size: 0.23rem;
+    margin-right: 0.05rem;
+    margin-top: 0.05rem;
+    margin-bottom: 0.05rem;
+    border-radius: 0.04rem;
+}
+.smlMainPro ul{
+    margin-top: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.smlMainPro li{
+    width: 4.533333333333333rem;
+    margin-right: 0.13333333333333333rem;
+    margin-bottom: 0.3rem;
+}
+.smlMainPro li:nth-child(2n){
+    margin-right: 0;
+}
+.smlMainPro ul li img{
+    width: 100%;
+    height: 3.6rem;
+    display: block;
+}
+.smlMainPro ul li h3{
+    font-size: 0.34rem;
+    color:#333;
+    padding: 0.2rem 0;
+}
+
+.smlMainMore .title{
+    font-size: 0.5066666666666667rem;
+    line-height: 1.7em;
+}
+.smlMainMore .info{
+    font-size: 0.24rem;
+    color:#aaa;
+    padding: 0.2rem 0 0.4rem 0;
+}
+.smlMainMore .info span{
+    color: #666;
+}
+.smlMainMore .con p{
+    padding: 0.1rem 0;
+}
+
+
