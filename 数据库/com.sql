@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： localhost
--- 生成日期： 2020-09-15 23:33:17
+-- 生成日期： 2020-09-16 17:57:17
 -- 服务器版本： 5.7.26
 -- PHP 版本： 7.3.4
 
@@ -76,7 +76,7 @@ CREATE TABLE `pmw_admin` (
 --
 
 INSERT INTO `pmw_admin` (`id`, `username`, `password`, `nickname`, `question`, `answer`, `levelname`, `checkadmin`, `loginip`, `logintime`) VALUES
-(1, 'admin', 'c3284d0f94606de1fd2af172aba15bf3', '', 0, '', 1, 'true', '127.0.0.1', 1600182935);
+(1, 'admin', 'c3284d0f94606de1fd2af172aba15bf3', '', 0, '', 1, 'true', '127.0.0.1', 1600226097);
 
 -- --------------------------------------------------------
 
@@ -3656,6 +3656,13 @@ CREATE TABLE `pmw_diymodel` (
   `checkinfo` enum('true','false') NOT NULL COMMENT '审核状态'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- 转存表中的数据 `pmw_diymodel`
+--
+
+INSERT INTO `pmw_diymodel` (`id`, `modeltitle`, `modelname`, `modeltbname`, `defaultfield`, `orderid`, `checkinfo`) VALUES
+(10, '特殊文章', 'test', 'pmw_testgrid', 'title,flag,picurl,orderid,posttime', 1, 'false');
+
 -- --------------------------------------------------------
 
 --
@@ -3930,9 +3937,8 @@ CREATE TABLE `pmw_info` (
 --
 
 INSERT INTO `pmw_info` (`id`, `classid`, `mainid`, `picurl`, `content`, `posttime`) VALUES
-(1, 1, -1, '', '测试信息来自互联网，若涉及侵权，请联系我们删除！', 1326769494),
-(2, 2, -1, '', '<p style=\"text-indent:2em;\">\r\n	百度，全球最大的中文搜索引擎、最大的中文网站。2000年1月创立于北京中关村。\r\n</p>\r\n<br />\r\n<p style=\"text-indent:2em;\">\r\n	1999年底，身在美国硅谷的李彦宏看到了中国互联网及中文搜索引擎服务的巨大发展潜力，抱着技术改变世界的梦想，他毅然辞掉硅谷的高薪工作，携搜索引擎专利技术，于2000年1月1日在中关村创建了百度公司。从最初的不足10人发展至今，员工人数超过12000人。如今的百度，已成为中国最受欢迎、影响力最大的中文网站。\r\n</p>\r\n<br />\r\n<p style=\"text-indent:2em;\">\r\n	百度拥有数千名研发工程师，这是中国乃至全球最为优秀的技术团队，这支队伍掌握着世界上最为先进的搜索引擎技术，使百度成为中国掌握世界尖端科学核心技术的中国高科技企业，也使中国成为美国、俄罗斯、和韩国之外，全球仅有的4个拥有搜索引擎核心技术的国家之一。\r\n</p>\r\n<br />\r\n<p style=\"text-indent:2em;\">\r\n	从创立之初，百度便将“让人们最便捷地获取信息，找到所求”作为自己的使命，成立以来，公司秉承“以用户为导向”的理念，不断坚持技术创新，致力于为用户提供“简单，可依赖”的互联网搜索产品及服务，其中包括：以网络搜索为主的功能性搜索，以贴吧为主的社区搜索，针对各区域、行业所需的垂直搜索，Mp3搜索，以及门户频道、IM等，全面覆盖了中文网络世界所有的搜索需求，根据第三方权威数据，百度在中国的搜索份额接近80%。\r\n</p>\r\n<br />\r\n<p style=\"text-indent:2em;\">\r\n	在面对用户的搜索产品不断丰富的同时，百度还创新性地推出了基于搜索的营销推广服务，并成为最受企业青睐的互联网营销推广平台。目前，中国已有数十万家企业使用了百度的搜索推广服务，不断提升着企业自身的品牌及运营效率。通过持续的商业模式创新，百度正进一步带动整个互联网行业和中小企业的经济增长，推动社会经济的发展和转型。\r\n</p>\r\n<br />\r\n<p style=\"text-indent:2em;\">\r\n	为推动中国数百万中小网站的发展，百度借助超大流量的平台优势，联合所有优质的各类网站，建立了世界上最大的网络联盟，使各类企业的搜索推广、品牌营销的价值、覆盖面均大面积提升。与此同时，各网站也在联盟大家庭的互助下，获得最大的生存与发展机会。\r\n</p>\r\n<hr style=\"page-break-after:always;\" class=\"ke-pagebreak\" />\r\n<p style=\"text-indent:2em;\">\r\n	作为国内的一家知名企业，百度也一直秉承“弥合信息鸿沟，共享知识社会”的责任理念，坚持履行企业公民的社会责任。成立来，百度利用自身优势积极投身公益事业，先后投入巨大资源，为盲人、少儿、老年人群体打造专门的搜索产品，解决了特殊群体上网难问题,极大地弥补了社会信息鸿沟问题。此外，在加速推动中国信息化进程、净化网络环境、搜索引擎教育及提升大学生就业率等方面，百度也一直走在行业领先的地位。2011年初，百度还特别成立了百度基金会，围绕知识教育、环境保护、灾难救助等领域，更加系统规范地管理和践行公益事业。\r\n</p>\r\n<br />\r\n<p style=\"text-indent:2em;\">\r\n	2005年，百度在美国纳斯达克上市，一举打破首日涨幅最高等多项纪录，并成为首家进入纳斯达克成分股的中国公司。通过数年来的市场表现，百度优异的业绩与值得依赖的回报，使之成为中国企业价值的代表，傲然屹立于全球资本市场。\r\n</p>\r\n<br />\r\n<p style=\"text-indent:2em;\">\r\n	2009年，百度更是推出全新的框计算技术概念，并基于此理念推出百度开放平台，帮助更多优秀的第三方开发者利用互联网平台自主创新、自主创业，在大幅提升网民互联网使用体验的同时，带动起围绕用户需求进行研发的产业创新热潮，对中国互联网产业的升级和发展产生巨大的拉动效应。\r\n</p>\r\n<br />\r\n<p style=\"text-indent:2em;\">\r\n	今天，百度已经成为中国最具价值的品牌之一，英国《金融时报》将百度列为“中国十大世界级品牌”，成为这个榜单中最年轻的一家公司，也是唯一一家互联网公司。而“亚洲最受尊敬企业”、“全球最具创新力企业”、“中国互联网力量之星”等一系列荣誉称号的获得，也无一不向外界展示着百度成立数年来的成就。\r\n</p>\r\n<br />\r\n<p style=\"text-indent:2em;\">\r\n	多年来，百度董事长兼CEO李彦宏，率领百度人所形成的“简单可依赖”的核心文化，深深地植根于百度。这是一个充满朝气、求实坦诚的公司，以搜索改变生活，推动人类的文明与进步，促进中国经济的发展为己任，正朝着更为远大的目标而迈进。\r\n</p>', 1326769513),
-(3, 3, -1, 'templates/default/images/aboutus_img.png', '百度，全球最大的中文搜索引擎最大的中文网站。二零零零年一月创立于北京中关村。从最初的不足十人人发展至今，员工人数超过一万两千人。如今的百度，已成为中国最受欢迎、影响力最大的中文网站。百度拥有数千名研发工程师，这是中国乃至全球最为优秀的技术团队，这支队伍掌握着世界上最为先进的搜索引擎技术，使百度成为中国掌握世界尖端科学核心技术的中国高科技企业，也使中国成为美国、俄罗斯、和韩国之外，全球仅有的4个拥有搜索引擎核心技术的国家之一。', 1326769523),
+(2, 2, -1, '', '<p style=\"text-indent:2em;\">\r\n	<span style=\"color:#222222;font-family:Consolas, &quot;white-space:pre-wrap;\">禹城东泰工贸有限公司占地5800平方米，建筑面积2600平方米，目前公司拥有汽车铸造车间、铸钢件铸造车间、机械件球磨加工车间和铸造生产加工中心、数控车床、铣、钻、三光标、光谱分析仪、金相显微镜等机械加工设备和检测设备，可生产各种铸钢、铸铁、耐热钢件和机械加工件，并通过国家质量安全认证。</span>\r\n</p>', 1600249920),
+(3, 3, -1, 'templates/default/images/aboutus_img.png', '<span style=\"color:#222222;text-indent:24px;white-space:normal;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;禹城东泰工贸有限公司占地5800平方米，建筑面积2600平方米，目前公司拥有汽车铸造车间、铸钢件铸造车间、机械件球磨加工车间和铸造生产加工中心、数控车床、铣、钻、三光标、光谱分析仪、金相显微镜等机械加工设备和检测设备，可生产各种铸钢、铸铁、耐热钢件和机械加工件，并通过国家质量安全认证。</span>', 1326769523),
 (4, 9, -1, '', '<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ke-zeroborder\">\r\n	<tbody>\r\n		<tr>\r\n			<td width=\"30%\" valign=\"top\">\r\n				<strong> <span style=\"color:#333333;\">百度大厦：</span></strong><br />\r\n地　址：北京市海淀区上地十街10号<br />\r\n邮　编：100085<br />\r\n			</td>\r\n			<td valign=\"top\">\r\n				<br />\r\nAddress:    Baidu Campus, No.10, Shangdi 10th Street Haidian District, Beijing, China<br />\r\nPost Code:&nbsp;100085\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n<br />\r\n<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" class=\"ke-zeroborder\">\r\n	<tbody>\r\n		<tr>\r\n			<td width=\"30%\" valign=\"top\">\r\n				总　机：(+86 10) 5992 8888<br />\r\n传　真：(+86 10) 5992 0000<br />\r\n			</td>\r\n			<td valign=\"top\">\r\n				Tel:&nbsp;(+86 10) 5992 8888<br />\r\nFAX:&nbsp;(+86 10) 5992 0000\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n<br />\r\n<img src=\"templates/default/images/imgdata/map.png\" />', 1326769535),
 (5, 10, -1, '', '地址:北京市海淀区上地十街10号<br />\r\n总机:(+86 10) 5992 8888<br />\r\n传真:(+86 10) 5992 0000', 1326769548);
 
@@ -3965,19 +3971,20 @@ CREATE TABLE `pmw_infoclass` (
 --
 
 INSERT INTO `pmw_infoclass` (`id`, `siteid`, `parentid`, `parentstr`, `infotype`, `classname`, `linkurl`, `picurl`, `picwidth`, `picheight`, `seotitle`, `keywords`, `description`, `orderid`, `checkinfo`) VALUES
-(1, 1, 0, '0,', 0, '网站公告', '', '', '', '', '', '', '', 1, 'false'),
+(14, 1, 4, '0,4,', 1, '公司新闻', 'news.php?cid=14', '', '', '', '', '', '', 14, 'true'),
 (2, 1, 0, '0,', 0, '关于我们', 'about.php', '', '', '', '', '', '', 2, 'true'),
 (3, 1, 2, '0,2,', 0, '关于我们摘要', '', '', '', '', '', '', '', 3, 'true'),
-(4, 1, 0, '0,', 1, '新闻动态', 'news.php', '', '', '', '', '', '', 4, 'true'),
-(5, 1, 0, '0,', 2, '产品展示', 'product.php', '', '', '', '', '', '', 5, 'true'),
-(6, 1, 5, '0,5,', 2, '笔记本电脑', 'product.php?cid=6', '', '', '', '', '', '', 6, 'true'),
-(7, 1, 5, '0,5,', 2, '智能手机', 'product.php?cid=7', '', '', '', '', '', '', 7, 'true'),
-(8, 1, 0, '0,', 2, '成功案例', 'case.php', '', '', '', '', '', '', 8, 'true'),
+(4, 1, 0, '0,', 1, '资讯中心', 'news.php', '', '', '', '', '', '', 4, 'true'),
+(5, 1, 0, '0,', 2, '产品展示', 'product.php', '', '', '', '', '', '', 5, 'false'),
+(16, 1, 5, '0,5,', 1, '自动化生产设备-非斜拉', 'product.php?cid=16', '', '', '', '', '', '', 16, 'true'),
+(19, 1, 0, '0,', 0, '专利证书', 'about.php', '', '', '', '', '', '', 19, 'true'),
 (9, 1, 0, '0,', 0, '联系我们', 'contact.php', '', '', '', '', '', '', 9, 'true'),
 (10, 1, 9, '0,9,', 0, '联系我们摘要', '', '', '', '', '', '', '', 10, 'true'),
-(11, 1, 0, '0,', 3, '软件下载', 'soft.php', '', '', '', '', '', '', 11, 'true'),
-(12, 1, 0, '0,', 4, '商品展示', 'goods.php', '', '', '', '', '', '', 12, 'true'),
-(13, 1, 0, '0,', 2, '幻灯Banner', '', '', '', '', '', '', '', 13, 'false');
+(20, 1, 0, '0,', 0, '视频中心', 'about.php', '', '', '', '', '', '', 20, 'true'),
+(13, 1, 0, '0,', 2, '幻灯Banner', '', '', '', '', '', '', '', 13, 'false'),
+(15, 1, 4, '0,4,', 1, '行业动态', 'news.php?cid=15', '', '', '', '', '', '', 15, 'true'),
+(17, 1, 5, '0,5,', 1, '自动化生产设备-斜拉', 'product.php?cid=17', '', '', '', '', '', '', 17, 'true'),
+(18, 1, 5, '0,5,', 1, '高效生成产品', 'product.php?cid=18', '', '', '', '', '', '', 18, 'true');
 
 -- --------------------------------------------------------
 
@@ -4484,7 +4491,99 @@ INSERT INTO `pmw_sysevent` (`id`, `uname`, `siteid`, `model`, `classid`, `action
 (3, 'admin', 1, 'web_config', 0, 'all', 1600182942, '127.0.0.1'),
 (4, 'admin', 1, 'upload_filemgr_sql', 0, 'all', 1600182948, '127.0.0.1'),
 (5, 'admin', 1, 'database_backup', 0, 'all', 1600182949, '127.0.0.1'),
-(6, 'admin', 1, 'infolist', 0, 'all', 1600182952, '127.0.0.1');
+(6, 'admin', 1, 'infolist', 0, 'all', 1600182952, '127.0.0.1'),
+(7, 'admin', 1, 'login', 0, '', 1600224379, '127.0.0.1'),
+(8, 'admin', 1, 'info', 0, 'all', 1600224384, '127.0.0.1'),
+(9, 'admin', 1, 'infolist', 0, 'all', 1600224385, '127.0.0.1'),
+(10, 'admin', 1, 'maintype', 0, 'all', 1600224391, '127.0.0.1'),
+(11, 'admin', 1, 'infoclass', 0, 'all', 1600224391, '127.0.0.1'),
+(12, 'admin', 1, 'infoimg', 0, 'all', 1600224422, '127.0.0.1'),
+(13, 'admin', 1, 'infolist', 0, 'all', 1600224466, '127.0.0.1'),
+(14, 'admin', 1, 'info', 0, 'all', 1600224467, '127.0.0.1'),
+(15, 'admin', 1, 'maintype', 0, 'all', 1600224479, '127.0.0.1'),
+(16, 'admin', 1, 'infoclass', 0, 'all', 1600224508, '127.0.0.1'),
+(17, 'admin', 1, 'info', 0, 'all', 1600224537, '127.0.0.1'),
+(18, 'admin', 1, 'maintype', 0, 'all', 1600224569, '127.0.0.1'),
+(19, 'admin', 1, 'infoclass', 0, 'all', 1600224571, '127.0.0.1'),
+(20, 'admin', 1, 'info', 0, 'all', 1600224598, '127.0.0.1'),
+(21, 'admin', 1, 'infolist', 0, 'all', 1600224600, '127.0.0.1'),
+(22, 'admin', 1, 'infoimg', 0, 'all', 1600224610, '127.0.0.1'),
+(23, 'admin', 1, 'infolist', 0, 'all', 1600224666, '127.0.0.1'),
+(24, 'admin', 1, 'info', 0, 'all', 1600224667, '127.0.0.1'),
+(25, 'admin', 1, 'maintype', 0, 'all', 1600224668, '127.0.0.1'),
+(26, 'admin', 1, 'infoclass', 0, 'all', 1600224669, '127.0.0.1'),
+(27, 'admin', 1, 'diymodel', 0, 'all', 1600225293, '127.0.0.1'),
+(28, 'admin', 1, 'login', 0, '', 1600226097, '127.0.0.1'),
+(29, 'admin', 1, 'database_backup', 0, 'all', 1600226106, '127.0.0.1'),
+(30, 'admin', 1, 'upload_filemgr_sql', 0, 'all', 1600226108, '127.0.0.1'),
+(31, 'admin', 1, 'web_config', 0, 'all', 1600226109, '127.0.0.1'),
+(32, 'admin', 1, 'site', 0, 'all', 1600226110, '127.0.0.1'),
+(33, 'admin', 1, 'admin', 0, 'all', 1600226112, '127.0.0.1'),
+(34, 'admin', 1, 'maintype', 0, 'all', 1600226117, '127.0.0.1'),
+(35, 'admin', 1, 'info', 0, 'all', 1600226120, '127.0.0.1'),
+(36, 'admin', 1, 'infoclass', 0, 'all', 1600226131, '127.0.0.1'),
+(37, 'admin', 1, 'infoimg', 0, 'all', 1600226173, '127.0.0.1'),
+(38, 'admin', 1, 'diymodel', 0, 'all', 1600226288, '127.0.0.1'),
+(39, 'admin', 1, 'maintype', 0, 'all', 1600226329, '127.0.0.1'),
+(40, 'admin', 1, 'infoclass', 0, 'all', 1600226331, '127.0.0.1'),
+(41, 'admin', 1, 'infoclass', 0, 'all', 1600247432, '127.0.0.1'),
+(42, 'admin', 1, 'info', 1, 'del', 1600247438, '127.0.0.1'),
+(43, 'admin', 1, 'infolist', 4, 'update', 1600247466, '127.0.0.1'),
+(44, 'admin', 1, 'infoclass', 0, 'all', 1600248340, '127.0.0.1'),
+(45, 'admin', 1, 'infolist', 4, 'add', 1600248357, '127.0.0.1'),
+(46, 'admin', 1, 'infoclass', 0, 'all', 1600248453, '127.0.0.1'),
+(47, 'admin', 1, 'infolist', 14, 'update', 1600248460, '127.0.0.1'),
+(48, 'admin', 1, 'infolist', 4, 'add', 1600248477, '127.0.0.1'),
+(49, 'admin', 1, 'infoclass', 0, 'all', 1600248666, '127.0.0.1'),
+(50, 'admin', 1, 'infolist', 15, 'update', 1600248668, '127.0.0.1'),
+(51, 'admin', 1, 'infoimg', 6, 'del', 1600248675, '127.0.0.1'),
+(52, 'admin', 1, 'infoclass', 0, 'all', 1600248819, '127.0.0.1'),
+(53, 'admin', 1, 'infoimg', 5, 'add', 1600248819, '127.0.0.1'),
+(54, 'admin', 1, 'infolist', 16, 'update', 1600248832, '127.0.0.1'),
+(55, 'admin', 1, 'infoclass', 0, 'all', 1600248880, '127.0.0.1'),
+(56, 'admin', 1, 'infoimg', 5, 'add', 1600248880, '127.0.0.1'),
+(57, 'admin', 1, 'infoclass', 0, 'all', 1600249064, '127.0.0.1'),
+(58, 'admin', 1, 'infoimg', 17, 'update', 1600249068, '127.0.0.1'),
+(59, 'admin', 1, 'infoimg', 5, 'add', 1600249096, '127.0.0.1'),
+(60, 'admin', 1, 'infoclass', 0, 'all', 1600249125, '127.0.0.1'),
+(61, 'admin', 1, 'infolist', 18, 'update', 1600249125, '127.0.0.1'),
+(62, 'admin', 1, 'infoclass', 0, 'all', 1600249391, '127.0.0.1'),
+(63, 'admin', 1, 'soft', 11, 'del', 1600249391, '127.0.0.1'),
+(64, 'admin', 1, 'goods', 12, 'del', 1600249395, '127.0.0.1'),
+(65, 'admin', 1, 'infoimg', 8, 'del', 1600249411, '127.0.0.1'),
+(66, 'admin', 1, 'infoclass', 0, 'all', 1600249468, '127.0.0.1'),
+(67, 'admin', 1, 'infoclass', 0, 'all', 1600249548, '127.0.0.1'),
+(68, 'admin', 1, 'info', 19, 'add', 1600249576, '127.0.0.1'),
+(69, 'admin', 1, 'info', 0, 'all', 1600249581, '127.0.0.1'),
+(70, 'admin', 1, 'maintype', 0, 'all', 1600249596, '127.0.0.1'),
+(71, 'admin', 1, 'infoclass', 0, 'all', 1600249749, '127.0.0.1'),
+(72, 'admin', 1, 'info', 21, 'del', 1600249749, '127.0.0.1'),
+(73, 'admin', 1, 'infoclass', 0, 'all', 1600249878, '127.0.0.1'),
+(74, 'admin', 1, 'info', 0, 'all', 1600249888, '127.0.0.1'),
+(75, 'admin', 1, 'info', 0, 'all', 1600249956, '127.0.0.1'),
+(76, 'admin', 1, 'info', 2, 'update', 1600249956, '127.0.0.1'),
+(77, 'admin', 1, 'info', 0, 'all', 1600250072, '127.0.0.1'),
+(78, 'admin', 1, 'infoclass', 0, 'all', 1600250077, '127.0.0.1');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `pmw_testgrid`
+--
+
+CREATE TABLE `pmw_testgrid` (
+  `id` smallint(5) UNSIGNED NOT NULL COMMENT '信息id',
+  `siteid` smallint(5) UNSIGNED NOT NULL DEFAULT '1' COMMENT '站点id',
+  `classid` smallint(5) UNSIGNED NOT NULL COMMENT '信息类别id',
+  `parentid` smallint(5) UNSIGNED NOT NULL COMMENT '信息类别父id',
+  `parentstr` varchar(80) NOT NULL COMMENT '信息类别父id字符串',
+  `title` varchar(80) NOT NULL COMMENT '标题',
+  `flag` varchar(30) NOT NULL COMMENT '属性',
+  `picurl` varchar(100) NOT NULL COMMENT '缩略图片',
+  `orderid` smallint(5) UNSIGNED NOT NULL COMMENT '排列排序',
+  `posttime` int(10) UNSIGNED NOT NULL COMMENT '提交时间',
+  `checkinfo` enum('true','false') NOT NULL COMMENT '审核状态'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -4985,6 +5084,12 @@ ALTER TABLE `pmw_sysevent`
   ADD PRIMARY KEY (`id`);
 
 --
+-- 表的索引 `pmw_testgrid`
+--
+ALTER TABLE `pmw_testgrid`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- 表的索引 `pmw_uploads`
 --
 ALTER TABLE `pmw_uploads`
@@ -5100,7 +5205,7 @@ ALTER TABLE `pmw_diymenu`
 -- 使用表AUTO_INCREMENT `pmw_diymodel`
 --
 ALTER TABLE `pmw_diymodel`
-  MODIFY `id` smallint(6) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '自定义模型id', AUTO_INCREMENT=10;
+  MODIFY `id` smallint(6) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '自定义模型id', AUTO_INCREMENT=11;
 
 --
 -- 使用表AUTO_INCREMENT `pmw_fragment`
@@ -5160,7 +5265,7 @@ ALTER TABLE `pmw_info`
 -- 使用表AUTO_INCREMENT `pmw_infoclass`
 --
 ALTER TABLE `pmw_infoclass`
-  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '栏目id', AUTO_INCREMENT=14;
+  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '栏目id', AUTO_INCREMENT=22;
 
 --
 -- 使用表AUTO_INCREMENT `pmw_infoflag`
@@ -5250,7 +5355,13 @@ ALTER TABLE `pmw_soft`
 -- 使用表AUTO_INCREMENT `pmw_sysevent`
 --
 ALTER TABLE `pmw_sysevent`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '信息id', AUTO_INCREMENT=7;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '信息id', AUTO_INCREMENT=79;
+
+--
+-- 使用表AUTO_INCREMENT `pmw_testgrid`
+--
+ALTER TABLE `pmw_testgrid`
+  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '信息id';
 
 --
 -- 使用表AUTO_INCREMENT `pmw_uploads`
