@@ -364,4 +364,12 @@ ul{
     padding: 0.1rem 0;
 }
 
+/*分页样式*/
+.page_info{text-align:center;margin-top:10px;color:#333;}
+.page_info span{padding:0 2px;font-weight:bold;}
+.page_list{height:24px;line-height:24px;text-align:center;letter-spacing:0;font-family:"Arial Black";font-size:12px;margin-top:20px;}
+.page_list a{display:inline-block;color:#898989;border:1px solid #e8e8e8;background:#f8f8f8;text-align:center;padding:0 8px;margin:0 1px;}
+.page_list a:hover{color:#fff;border:1px solid #898989;background:#898989;}
+.page_list a.on{color:#333;border:1px solid #ccc;background:#E5EDF2;}
+
 

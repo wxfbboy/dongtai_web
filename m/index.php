@@ -67,7 +67,7 @@
             <div class="txt">
                 <?php echo Info(3,180); ?>
             </div>
-            <a href="###" class="pubBtn">查看全部</a>
+            <a href="about.php" class="pubBtn">查看全部</a>
             <div class="pic">
                 <img src="images/abtPic1.jpg" />
             </div>
@@ -77,9 +77,9 @@
                 <p>COMPANY PROFILE</p>
             </div>
             <div class="txt">
-                禹城东泰工贸有限公司与时俱进，现研发出一款高效节能的“水泥预制自动化神器”，本实用新型装置实现了混凝土预制件的生产机械自动化，节省了预制人工，大幅提高了混凝土预制效率，具有分体拆卸式结构，运输便利，场地要求低，具有设计合理、使用方便和加工成本低的优点。
+                <?php echo Info(22,180); ?>
             </div>
-            <a href="###" class="pubBtn">查看全部</a>
+            <a href="about.php" class="pubBtn">查看全部</a>
             <div class="pic">
                 <img src="images/abtPic2.jpg" />
             </div>
@@ -91,32 +91,39 @@
                 <p>News Information</p>
             </div>
             <ul>
+                <?php
+                    $dosql->Execute("select * from `#@__infolist` where (classid=4 or parentid=4) and checkinfo=true and delstate='' order by orderid desc limit 0,4");
+                    while($row = $dosql->GetArray()){
+                ?>
                 <li>
                     <a href="#">
                         <time datetime="" class="time">
-                            <span>08-01</span>
-                            2018
+                            <span><?php echo MyDate('m-d',$row['posttime']); ?></span>
+                            <?php echo MyDate('Y',$row['posttime']); ?>
                         </time>
                         <div class="txt">
-                            <h4>中卫至兰州铁路项目（宁夏段）中标结果</h4>
-                            <p>新建中卫至兰州铁路（中卫-白银段）位于宁夏回族自治区和甘肃省境内，线路北起宁夏回族...</p>
+                            <h4><?php echo ReStrLen($row['title'],20); ?></h4>
+                            <p><?php echo ReStrLen($row['description'],40); ?></p>
                         </div>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <time datetime="" class="time">
-                            <span>08-01</span>
-                            2018
-                        </time>
-                        <div class="txt">
-                            <h4>中卫至兰州铁路项目（宁夏段）中标结果</h4>
-                            <p>新建中卫至兰州铁路（中卫-白银段）位于宁夏回族自治区和甘肃省境内，线路北起宁夏回族...</p>
-                        </div>
-                    </a>
-                </li>
+                <?php
+                    }
+                ?>
+<!--                <li>-->
+<!--                    <a href="#">-->
+<!--                        <time datetime="" class="time">-->
+<!--                            <span>08-01</span>-->
+<!--                            2018-->
+<!--                        </time>-->
+<!--                        <div class="txt">-->
+<!--                            <h4>中卫至兰州铁路项目（宁夏段）中标结果</h4>-->
+<!--                            <p>新建中卫至兰州铁路（中卫-白银段）位于宁夏回族自治区和甘肃省境内，线路北起宁夏回族...</p>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </li>-->
             </ul>
-            <a href="###" class="pubBtn">查看全部</a>
+            <a href="news.php" class="pubBtn">查看全部</a>
         </section>
         <?php require_once 'footer.php' ?>
     </div>
